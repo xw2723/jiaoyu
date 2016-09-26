@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+   		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+		<!--<link rel="icon" href="img/favicon.ico">-->
+		<link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.css"/>
+	    <link rel="stylesheet" href="css/common.css"/>
+	    <script type="text/javascript" src="plugins/jquery/jquery-1.10.2.js"></script>
+	    <script type="text/javascript" src="plugins/bootstrap/js/bootstrap.js"></script>
+	    <script type="text/javascript" src="js/common.js"></script>
+	    <style>
+	    	.top-picture {
+	    		height: 400px;
+	    		background: url("img/top-img1.jpg");
+	    		background-position: 50%;
+	    	}
+	    </style>
+	</head>
+	<body>
+		<!--头部菜单 start-->
+		<nav class="navbar navbar-theme1 navbar-fixed-top" role="navigation">
+		    <div class="container-fluid">
+		        <div class="navbar-header">
+		            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+		                <span class="sr-only">BI统计分析</span>
+		                <span class="icon-bar"></span>
+		                <span class="icon-bar"></span>
+		                <span class="icon-bar"></span>
+		            </button>
+		            <a class="navbar-brand" href="#">
+		            	logo
+		            </a>
+		        </div>
+		        <div id="navbar" class="navbar-collapse collapse">
+		        	<ul class="nav navbar-nav">
+		                <li><a href="#">课程列表</a></li>
+		                <li><a href="#">在线学编程</a></li>
+		            </ul>
+		            <ul class="nav navbar-nav navbar-right">
+		                <li class="dropdown">
+		                    <a id="userBox" data-toggle="dropdown" href="#">
+		                    	登录
+		                    </a>
+		                </li>
+		            </ul>
+		        </div>
+		    </div>
+		</nav>
+		<!--头部菜单 end-->
+		
+		<div class="main-body">
+			<div class="container-fluid top-picture">
+				
+			</div>
+			
+			<div class="container-fluid">
+				<ul id="myTab" class="nav nav-tabs">
+					<li>
+						<a href="#whyPython" data-toggle="tab">
+							为什么要学习python
+						</a>
+					</li>
+					<li class="active">
+						<a href="#introducePython" data-toggle="tab">python课程介绍</a>
+					</li>
+				</ul>
+				
+				<div id="myTabContent" class="tab-content">
+					<div id="whyPython" class="tab-pane fade">
+						<p>W3Cschoool菜鸟教程是一个提供最新的web技术站点，本站免费提供了建站相关的技术文档，帮助广大web技术爱好者快速入门并建立自己的网站。菜鸟先飞早入行——学的不仅是技术，更是梦想。</p>
+					</div>
+					<div id="introducePython" class="tab-pane fade row in active">
+						<ul class="col-md-8 col-lg-8">
+							<li>
+								<div class="media">
+								   	<a class="media-left media-middle" href="#">
+								     	<img alt="64x64" style="width:64px;height:64px;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGRlZnMvPjxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjE0LjUiIHk9IjMyIiBzdHlsZT0iZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQ7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9nPjwvc3ZnPg=="/>
+								   	</a>
+								   	<div class="media-body">
+								     	<h3 class="media-heading">发射点发射得分</h3>
+								     	<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+								  	</div>
+								</div>
+							</li>
+							<li>
+								<div class="media">
+								   	<a class="media-left media-middle" href="#">
+								     	<img alt="64x64" style="width:64px;height:64px;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGRlZnMvPjxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjE0LjUiIHk9IjMyIiBzdHlsZT0iZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQ7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9nPjwvc3ZnPg=="/>
+								   	</a>
+								   	<div class="media-body">
+								     	<h4 class="media-heading">发射点发射得分</h4>
+								     	<p>士大夫撒旦发射点发撒发射点发射得分</p>
+								  	</div>
+								</div>
+							</li>
+						</ul>
+						
+						<div class="col-md-4 col-lg-4">
+							<div class="row">
+								<div class="col-md-4 col-lg-4">
+									<p>1111</p>
+									<p>1111</p>
+									<p>1111</p>
+								</div>
+								<div class="col-md-4 col-lg-4">
+									<p>1111</p>
+									<p>1111</p>
+									<p>1111</p>
+								</div>
+								<div class="col-md-4 col-lg-4">
+									<p>1111</p>
+									<p>1111</p>
+									<p>1111</p>
+								</div>
+							</div>
+							
+							<img style="width:100%; height: 150px;" src="img/top-img1.jpg" alt="" />
+						
+							<p>发射点发射得分撒旦发射点发撒法撒旦发射点发</p>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		
+		<footer id="footer">
+			<div class="container">
+				<div class="footleft col-xs-12 col-md-10">
+					<div class="col-xs-12 col-md-5 text-left">
+						<h3 class="ui-logo-text hide-text">优易论文</h3>
+						<p class="hidden-xs">
+							优易论文源自英国成立于2004,提供原创检测保证文章100%原创，具有97%以上的一次性通过率和31%的first class成绩。专业代写Essay、Assignment、Dissertation、Report，提供Turnitin官方检测，还可享受长达2个月免费修改服务。
+						</p>
+						<div class="row-online">
+							<a href="http://wpa.qq.com/msgrd?v=3&amp;uin=903898506&amp;site=qq&amp;menu=yes" class="btn btn-primary btn-online"><i class="uicon-qq"></i> 在线客服</a>
+						</div>
+					</div>
+					<ul class="col-xs-4 col-md-2 service-items sec hidden-xs">
+						<li class="title"><a href="http://www.uiessays.com/services">论文服务项目</a></li>
+						<li><a href="http://www.uiessays.com/order-now" target="_blank">毕业论文定制</a></li>
+						<li><a href="http://www.uiessays.com/grammar-order-now" target="_blank">语法校正服务</a></li>
+						<li><a href="http://www.uiessays.com/translate-order-now" target="_blank">学术翻译服务</a></li>
+						<li><a href="http://www.uiessays.com/turnitin-order-now" target="_blank">抄袭检测报告</a></li>
+						<li><a href="http://www.uiessays.com/application-order-now" target="_blank">留学文书申请</a></li>
+						<li><a href="http://www.uiessays.com/polytechnic-order-now" target="_blank">理工项目服务</a></li>
+					</ul>
+					<ul class="col-xs-4 col-md-2 privacy-items sec hidden-xs">
+						<li class="title"><a href="http://www.uiessays.com/about#PrivacyPolicy" target="_blank" rel="nofollow">隐私与声明</a></li>
+						<li><a href="http://www.uiessays.com/about/tos">服务条款</a></li>
+						<li><a href="http://www.uiessays.com/about/privacy_policy">隐私政策</a></li>
+						<li><a href="http://www.uiessays.com/about/cookies">Cookies</a></li>
+						<li><a href="http://www.uiessays.com/about/us">关于我们</a></li>
+						<li><a href="http://www.uiessays.com/process" target="_blank">定制流程</a></li>
+						<li><a href="http://www.uiessays.com/process" target="_blank">服务期限</a></li>
+					</ul>
+					<ul class="col-xs-4 col-md-2 about-us sec hidden-xs">
+						<li class="title"><a href="http://www.uiessays.com/about/us">关于我们</a></li>
+						<li><a href="http://www.uiessays.com/timeline" target="_blank">发展历程</a></li>
+						<li><a href="http://www.uiessays.com/about/contact_us">联系我们</a></li>
+						<li><a href="http://www.uiessays.com/sitemap" target="_blank" rel="nofollow">网站地图</a></li>
+						<li><a href="http://www.uiessays.com/topic/feedback" target="_blank" rel="nofollow">客户评价</a></li>
+						<li><a href="http://www.uiessays.com/joinus" target="_blank" rel="nofollow" class="text-warning">加入我们</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 footright col-md-2 text-left">
+					<ul class="sec">
+						<li class="title">关注</li>
+						<li>
+							<a href="http://wpa.qq.com/msgrd?v=3&amp;uin=903898506&amp;site=qq&amp;menu=yes" target="_blank" rel="nofollow">
+								Email：Service@uiessays.com
+							</a>
+						</li>
+						<li class="social-icon">
+							<ul>
+								<li>
+									<a class="social-sina" rel="external nofollow" target="_blank" href="http://weibo.com/writingservice">
+										<i class="uicon-weibo"></i>
+										<span class="hide-text">关注新浪微博</span>
+									</a>
+								</li>
+								<li>
+									<a class="social-t" rel="external nofollow" target="_blank" href="http://t.qq.com/assignment-YouYi">
+										<i class=" uicon-tencent-weibo"></i>
+										<span class="hide-text">关注腾讯微博</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-xs-12 col-md-12 text-center ui-intro">
+				<h3>优易论文 - 全球领先的论文代写机构</h3>
+				<i class="uicon-logo"></i>
+			</div>
+		</footer>
+	</body>
+</html>

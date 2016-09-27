@@ -17,12 +17,18 @@ dl, dt, dd {
   padding: 0;
   list-style: none; }
 
-a {
-  text-decoration: none; }
-
+a { text-decoration: none; }
 a:hover, a:focus, a:link, a:active {
-  color: #9d9d9d; }
+  color: #9d9d9d;
+}
 
+button,
+button.btn {
+	outline: none!important;
+}
+
+.mt20 { margin-top: 20px; }
+.mt30 { margin-top: 30px; }
 
 .navbar-theme1 {
 	background: #1a86c0;
@@ -33,4 +39,10 @@ a:hover, a:focus, a:link, a:active {
 .navbar-theme1 .navbar-nav a:hover {
 	background: transparent;
 	color: #000;
+}
+
+
+
+footer.footer {
+	border-top: 1px solid red;
 }

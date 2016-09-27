@@ -17,6 +17,60 @@
 	    		background: url("img/top-img1.jpg");
 	    		background-position: 50%;
 	    	}
+	    	/*tab切换*/
+	    	.tab-head {
+	    		background: #eee;
+	    	}
+	    	.tab-head a {
+	    		color: #000;
+	    	}
+	    	.nav-tabs > li > a {
+	    		background-color: transparent;
+	    		border: 0;
+	    		border-bottom: 3px solid #eee;
+	    	}
+	    	.nav-tabs > li.active a:link,
+	    	.nav-tabs > li.active a,
+	    	.nav-tabs > li.active:hover a,
+	    	.nav-tabs > li:hover a {
+	    		border: 0;
+	    		border-bottom: 3px solid #1a86c0;
+	    		background-color: transparent;
+	    	}
+	    	.nav-tabs > li.active a {
+	    		font-weight: bold;
+	    	}
+	    	.tab-btn {
+	    		line-height: 40px;
+	    	}
+	    	.tab-btn .btn {
+	    		width: 80px;
+	    	}
+	    	/*课程列表*/
+	    	.course-list {
+	    		
+	    	}
+	    	.course-list > li {
+	    		margin: 10px auto;
+	    		background: #eee;
+	    		padding: 5px 20px;
+	    	}
+	    	.course-list > li .media img{
+	    		width: 64px;
+	    		height: 64px;
+	    		border: 1px solid red;
+	    	}
+	    	.course-list > li .media-body .media-heading {
+	    		font-weight: bold;
+	    		padding-top: 5px;
+	    	}
+	    	.course-list > li .media-body p {
+	    		padding: 5px 0;
+	    	}
+	    	.course-list > li:hover .media button {
+	    		color: #fff;
+	    		background: #1a86c0;
+	    	}
 	    </style>
 	</head>
 	<body>
@@ -56,79 +110,94 @@
 				
 			</div>
 			
-			<div class="container-fluid">
-				<ul id="myTab" class="nav nav-tabs">
-					<li>
-						<a href="#whyPython" data-toggle="tab">
-							为什么要学习python
-						</a>
-					</li>
-					<li class="active">
-						<a href="#introducePython" data-toggle="tab">python课程介绍</a>
-					</li>
-				</ul>
-				
-				<div id="myTabContent" class="tab-content">
-					<div id="whyPython" class="tab-pane fade">
-						<p>W3Cschoool菜鸟教程是一个提供最新的web技术站点，本站免费提供了建站相关的技术文档，帮助广大web技术爱好者快速入门并建立自己的网站。菜鸟先飞早入行——学的不仅是技术，更是梦想。</p>
-					</div>
-					<div id="introducePython" class="tab-pane fade row in active">
-						<ul class="col-md-8 col-lg-8">
+			<div class="tab-body">
+				<div class="container-fluid tab-head">
+					<div class="container">
+						<ul class="nav nav-tabs">
 							<li>
-								<div class="media">
-								   	<a class="media-left media-middle" href="#">
-								     	<img alt="64x64" style="width:64px;height:64px;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGRlZnMvPjxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjE0LjUiIHk9IjMyIiBzdHlsZT0iZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQ7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9nPjwvc3ZnPg=="/>
-								   	</a>
-								   	<div class="media-body">
-								     	<h3 class="media-heading">发射点发射得分</h3>
-								     	<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-								  	</div>
-								</div>
+								<a href="#whyPython" data-toggle="tab">
+									为什么要学习python
+								</a>
 							</li>
-							<li>
-								<div class="media">
-								   	<a class="media-left media-middle" href="#">
-								     	<img alt="64x64" style="width:64px;height:64px;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGRlZnMvPjxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjE0LjUiIHk9IjMyIiBzdHlsZT0iZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQ7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9nPjwvc3ZnPg=="/>
-								   	</a>
-								   	<div class="media-body">
-								     	<h4 class="media-heading">发射点发射得分</h4>
-								     	<p>士大夫撒旦发射点发撒发射点发射得分</p>
-								  	</div>
-								</div>
+							<li class="active">
+								<a href="#introducePython" data-toggle="tab">python课程介绍</a>
+							</li>
+							<li class="pull-right tab-btn">
+								<button class="btn btn-danger">参加</button>
 							</li>
 						</ul>
-						
-						<div class="col-md-4 col-lg-4">
-							<div class="row">
-								<div class="col-md-4 col-lg-4">
-									<p>1111</p>
-									<p>1111</p>
-									<p>1111</p>
-								</div>
-								<div class="col-md-4 col-lg-4">
-									<p>1111</p>
-									<p>1111</p>
-									<p>1111</p>
-								</div>
-								<div class="col-md-4 col-lg-4">
-									<p>1111</p>
-									<p>1111</p>
-									<p>1111</p>
-								</div>
-							</div>
+					</div>
+				</div>
+				<div class="container">
+					<div id="myTabContent" class="tab-content mt30">
+						<div id="whyPython" class="tab-pane fade">
+							<p>W3Cschoool菜鸟教程是一个提供最新的web技术站点，本站免费提供了建站相关的技术文档，帮助广大web技术爱好者快速入门并建立自己的网站。菜鸟先飞早入行——学的不仅是技术，更是梦想。</p>
+						</div>
+						<div id="introducePython" class="tab-pane fade row in active">
+							<ul class="col-md-8 col-lg-8 course-list">
+								<li>
+									<div class="media">
+									   	<a class="media-left media-middle" href="#">
+									     	<img alt="64x64" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGRlZnMvPjxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjE0LjUiIHk9IjMyIiBzdHlsZT0iZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQ7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9nPjwvc3ZnPg=="/>
+									   	</a>
+									   	<div class="media-body">
+									     	<h3 class="media-heading">发射点发射得分</h3>
+									     	<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+									  	</div>
+									  	<div class="media-right media-middle">
+									  		<button class="btn">开始学习</button>
+									  	</div>
+									</div>
+								</li>
+								<li>
+									<div class="media">
+									   	<a class="media-left media-middle" href="#">
+									     	<img alt="64x64" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGRlZnMvPjxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjE0LjUiIHk9IjMyIiBzdHlsZT0iZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQ7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9nPjwvc3ZnPg=="/>
+									   	</a>
+									   	<div class="media-body">
+									     	<h3 class="media-heading">发射点发射得分</h3>
+									     	<p>士大夫撒旦发射点发撒发射点发射得分</p>
+									  	</div>
+									  	<div class="media-right media-middle">
+									  		<button class="btn">开始学习</button>
+									  	</div>
+									</div>
+								</li>
+							</ul>
 							
-							<img style="width:100%; height: 150px;" src="img/top-img1.jpg" alt="" />
-						
-							<p>发射点发射得分撒旦发射点发撒法撒旦发射点发</p>
+							<div class="col-md-4 col-lg-4">
+								<div class="row tj-box">
+									<div class="col-md-4 col-lg-4 text-center">
+										<i class="glyphicon glyphicon-user"></i>
+										<p>1111</p>
+										<p>学员</p>
+									</div>
+									<div class="col-md-4 col-lg-4 text-center">
+										<i class="glyphicon glyphicon-picture"></i>
+										<p>1111</p>
+										<p>课程</p>
+									</div>
+									<div class="col-md-4 col-lg-4 text-center">
+										<i class="glyphicon glyphicon-thumbs-up"></i>
+										<p>1111</p>
+										<p>点赞</p>
+									</div>
+								</div>
+								
+								<div class="mt20">
+									<img style="width:100%; height: 150px;" src="img/top-img1.jpg" alt="" />
+								</div>
+										
+								<p class="mt20" style="text-indent: 2em;">发射点发射得分撒旦发射点发撒法撒旦发射点发发射点发射得分撒旦发射点发撒法撒旦发射点发发射点发射得分撒旦发射点发撒法撒旦发射点发发射点发射得分撒旦发射点发撒法撒旦发射点发</p>
+							</div>
 						</div>
 					</div>
 				</div>
-				
 			</div>
 		</div>
 		
-		<footer id="footer">
-			<div class="container">
+		<footer id="footer" class="footer mt30">
+			<div class="container mt30">
 				<div class="footleft col-xs-12 col-md-10">
 					<div class="col-xs-12 col-md-5 text-left">
 						<h3 class="ui-logo-text hide-text">优易论文</h3>

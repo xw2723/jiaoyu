@@ -1,0 +1,68 @@
+.top-picture {
+	height: 400px;
+	background: url("../img/top-img1.jpg");
+	background-position: 50%;
+}
+/*tab切换*/
+.tab-head {
+	background: #eee;
+}
+.tab-head a {
+	color: #000;
+}
+.nav-tabs > li > a {
+	background-color: transparent;
+	border: 0;
+	border-bottom: 3px solid #eee;
+}
+.nav-tabs > li.active a:link,
+.nav-tabs > li.active a,
+.nav-tabs > li.active:hover a,
+.nav-tabs > li:hover a {
+	border: 0;
+	border-bottom: 3px solid #1a86c0;
+	background-color: transparent;
+}
+.nav-tabs > li.active a {
+	font-weight: bold;
+}
+.tab-btn {
+	line-height: 40px;
+}
+.tab-btn .btn {
+	width: 80px;
+}
+/*课程列表*/
+.course-list {
+	
+}
+.course-list > li {
+	margin-bottom: 20px;
+	background: #eee;
+	padding: 5px 20px;
+}
+.course-list > li:hover {
+	background: #ddd;
+}
+.course-list > li .media img{
+	width: 80px;
+	height: 80px;
+}
+.course-list > li .media-body .media-heading {
+	font-weight: bold;
+	padding-top: 5px;
+}
+.course-list > li .media-body p {
+	padding: 5px 0;
+}
+.course-list > li:hover .media button {
+	color: #fff;
+	background: #1a86c0;
+}
+.tj-box i {
+	color: #169BD5;
+	font-size: 24px;
+}
+.tj-box .number {
+	color: #9d9d9d;
+}

@@ -1,0 +1,46 @@
+.main-body .container-fluid {
+	background: #eee;
+}
+
+.login-box {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.login-box .txt-left {
+	padding-right: 50px;
+}
+
+.service-box {
+	
+}
+.service-box .top-title-box p {
+	padding: 0 150px;
+}
+.service-box .item-list li {
+	/*text-align: center;*/
+	padding: 10px 30px;
+}
+.service-box .item-list li img {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	-ms-border-radius: 50%;
+	overflow: hidden;
+}
+
+.product-box {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.product-box img {
+	width: 90%;
+	height: 300px;
+	display: inline-block;
+	margin: 0 auto;
+}
+.product-box .content {
+	margin: 20px 0;
+}

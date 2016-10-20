@@ -1,0 +1,13 @@
+.card-list > li {
+
+}
+.card-list > li .item-shell {
+	padding: 20px 10px 10px;
+	background: #ddd;
+}
+.card-list > li .item-shell img {
+	width: 100px;
+	height: 100px;
+	display: block;
+	margin: 0 auto;
+}

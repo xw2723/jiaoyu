@@ -37,7 +37,7 @@
 			            </ul>
 			            <ul class="nav navbar-nav navbar-right">
 			                <li>
-			                    <a href="#">
+			                    <a href="#" data-toggle="modal" data-target="#loginDialog">
 			                    	登录
 			                    </a>
 			                </li>
@@ -160,18 +160,117 @@
 			</div>
 		</div>
 		
-		<!--<div class="modal fade modal-login">
-		  	<div class="modal-dialog">
-		    	<div class="modal-content">
-		      		<div class="modal-header">
-		        		<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-		      		</div>
-		      		<div class="modal-body">
-		        		
-		      		</div>
-		    	</div>
-		  	</div>
-		</div>-->
+		<div class="login-dialog">
+			<div class="modal fade" id="loginDialog" tabindex="-1" role="dialog" aria-hidden="true">
+			  	<div class="modal-dialog">
+			    	<!--<div class="modal-content">-->
+			      		<!--<div class="modal-header">
+			        		<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+			      		</div>
+			      		<div class="modal-body"></div>-->
+			    	<!--</div>-->
+			    	<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+			    	
+	      			<div class="login-box">
+						<ul id="myTab" class="nav nav-tabs">
+						    <li class="active">
+						        <a href="#loginTab" data-toggle="tab">登&nbsp; &nbsp; &nbsp;录</a>
+						    </li>
+						    <li>
+						    	<a href="#registeredTab" data-toggle="tab">注&nbsp; &nbsp; &nbsp;册</a>
+						    </li>
+						</ul>
+						<div class="tab-content">
+						    <div class="tab-pane fade in active" id="loginTab">
+						    	<ul class="form-box">
+						    		<li>
+						    			<div class="control-box login-name">
+						    				<input type="text" name="loginName" placeholder="登录帐号" />
+						    			</div>
+						    		</li>
+						    		<li>
+						    			<div class="control-box login-pass">
+						    				<input type="password" name="loginPass" placeholder="登录密码" />
+						    			</div>
+						    		</li>
+						    		<li class="row row-grid">
+					    				<div class="col-md-9">
+					    					<div class="control-box">
+					    						<input type="text" name="loginAuthCode" placeholder="验证码" />
+				    						</div>
+						    			</div>
+						    			<div class="col-md-3 text-right">
+						    				<img src="./img/authCode.png" class="auth-code" />
+						    			</div>
+						    		</li>
+						    		<li>
+						    			<button class="btn btn-primary form-control">登&nbsp; &nbsp; &nbsp;录</button>
+						    		</li>
+						    		<li class="row row-grid">
+					    				<div class="col-md-6 text-left">
+					    					<input type="checkbox" />记住我
+						    			</div>
+						    			<div class="col-md-6 text-right">
+						    				<a href="#">忘记密码？</a>
+						    			</div>
+						    		</li>
+						    		<li class="other-login">
+						    			三方登陆：
+						    			<a href="#"><i class="iconfont">&#xe603;</i></a>
+										<a href="#"><i class="iconfont">&#xe601;</i></a>
+						    		</li>
+						    		<li class="row"></li>
+						    	</ul>
+						    </div>
+						    <div class="tab-pane fade" id="registeredTab">
+						    	<ul class="form-box">
+						    		<li>
+						    			<div class="control-box">
+						    				<input type="text" name="loginName" placeholder="登录帐号" />
+						    			</div>
+						    		</li>
+						    		<li>
+						    			<div class="control-box">
+						    				<input type="password" name="loginPass" placeholder="登录密码" />
+						    			</div>
+						    		</li>
+						    		<li>
+						    			<div class="control-box">
+						    				<input type="password" name="loginConfirmPass" placeholder="确认密码" />
+						    			</div>
+						    		</li>
+						    		<li>
+						    			<div class="control-box">
+						    				<input type="text" name="loginConfirmPass" placeholder="姓名" />
+						    			</div>
+						    		</li>
+						    		<li>
+						    			<div class="control-box">
+						    				<input type="text" name="loginConfirmPass" placeholder="年龄" />
+						    			</div>
+						    		</li>
+						    		<li class="row row-grid">
+					    				<div class="col-md-9">
+					    					<div class="control-box">
+					    						<input type="text" name="loginAuthCode" placeholder="验证码" />
+				    						</div>
+						    			</div>
+						    			<div class="col-md-3 text-right">
+						    				<img src="./img/authCode.png" class="auth-code" />
+						    			</div>
+						    		</li>
+						    		<li>
+						    			<button class="btn btn-primary form-control">注&nbsp; &nbsp; &nbsp;册</button>
+						    		</li>
+						    		<li class="row"></li>
+						    	</ul>
+						    </div>
+						</div>
+					</div>
+		      		
+			  	</div>
+			</div>
+		</div>
 		
 		<!--采用container-fluid，使得整个页尾的宽度为100%，并设置它的背景色-->
 		<footer class="container-fluid foot-wrap">
